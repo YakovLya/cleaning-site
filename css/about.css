@@ -1,0 +1,12 @@
+.about__desc{
+  margin: 4rem auto 0;
+  width: 90%;
+  line-height: 1.2;
+}
+
+.about__line{
+  margin: 5rem 0;
+  height: 2px;
+  background-color: var(--light-gray);
+  border: none;
+}

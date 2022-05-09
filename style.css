@@ -1,0 +1,53 @@
+:root{
+  font-size: 62.5%; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+
+  --gray: #444;
+  --light-gray: #666;
+  --white: #fff;
+  --black: #000;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.hide{
+  display: none !important;
+}
+
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider__item{
+  flex: 1;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  margin: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--light-gray) ;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray); 
+}

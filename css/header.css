@@ -1,0 +1,135 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.menu-btn{
+  z-index: 15;
+  position: fixed;
+  top: 4rem;
+  right: 6rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-btn__text{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color .2s ease-in-out;
+}
+
+.menu-btn__btn{
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+  transition: all .20s ease-in-out;
+}
+
+.btn__line{
+  top: 0;
+  left: 10%;
+  position: absolute;
+  height: 3px;
+  width: 80%;
+  background-color: var(--gray);
+  transition: all .20s ease-in-out;
+}
+
+.btn__line-1{
+  top: 1.35rem;
+}
+
+.btn__line-2{
+  top: 2.9rem;
+}
+
+.btn__line-3{
+  top: 4.45rem;
+}
+
+.pressed .menu-btn__btn{
+  transform: translateX(0.5rem);
+}
+
+.pressed .btn__line{
+  background-color: var(--white);
+}
+
+.pressed .menu-btn__text{
+  color: var(--white);
+}
+
+.pressed .btn__line-1{
+  transform: rotate(45deg) translate(0.6rem, 1.55rem);
+}
+
+.pressed .btn__line-2{
+  opacity: 0;
+}
+
+.pressed .btn__line-3{
+  transform: rotate(-45deg) translate(0.6rem, -1.55rem);
+}
+
+.menu-panel.menu-up{
+  animation: menuSlideReverse 0.4s ease-in-out normal forwards;
+}
+
+.menu-panel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--gray);
+  overflow: hidden;
+  animation: menuSlide 0.4s ease-in-out normal forwards;
+}
+
+@keyframes menuSlide {
+  0%{
+    height: 0vh;
+  }
+
+  100%{
+    height: 100vh;
+  }
+}
+
+@keyframes menuSlideReverse {
+  0%{
+    height: 100vh;
+  }
+
+  100%{
+    height: 0vh;
+  }
+}
+
+.menu-panel__list{
+  width: 25%;
+  text-align: center;
+}
+
+.menu-panel__item{
+  color: var(--white);
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.menu-panel__item:hover{
+  background: var(--light-gray);
+}

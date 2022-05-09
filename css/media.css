@@ -1,0 +1,209 @@
+@media screen and (min-width: 1920px){
+  .slider__item{
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .container{
+    width: 90%;
+  }
+
+  .menu-btn{
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .choice{
+    width: 90vw;
+    height: 95vh;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    left: 0;
+    transform: translateX(0);
+    width: 100%;
+  }
+
+  .quality{
+    padding: 0rem 3rem;
+  }
+
+  .slider__item{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .choice{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 3rem;
+    box-sizing: border-box;
+  }
+
+  .title{
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .intro-container{
+    padding: 0 2rem;
+  }
+
+  .choice__container{
+    grid-template-columns: 45% 55%;
+  }
+
+  /* .choice__left{
+    width: 45%;
+  }
+
+  .choice__right{
+    width: 55%;
+    margin-left: 45%;
+  } */
+
+  .choice__close{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .footer{
+    padding: 0 0.5rem 0 3rem;
+    font-size: 1.3rem;
+  }
+
+  .footer-item::before{
+    background-size: 12px 12px;
+    height: 12px;
+    width: 12px;
+    top: 0;
+    left: -18px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .menu-btn{
+    height: 6rem;
+    width: 4rem;
+    opacity: 0.8;
+  }
+
+  .pressed{
+    opacity: 1;
+  }
+
+  .menu-btn__text{
+    width: 4rem;
+   font-size: 1.4rem;
+   font-weight: 400;
+  }
+
+  .menu-btn__btn{
+    height: 6rem;
+    width: 4rem;
+  }
+
+  .btn__line{
+    height: 2px;
+    width: 90%;
+  }
+
+  .btn__line-1{
+    top: 1rem;
+  }
+
+  .btn__line-2{
+    top: 2rem;
+  }
+
+  .btn__line-3{
+    top: 3rem;
+  }
+
+  .pressed .btn__line-3{
+    top: 4rem;
+  }
+
+  .intro{
+    margin-bottom: 4rem;
+    line-height: 1.2;
+  }
+
+  .intro-overlay{
+    opacity: 0.5;
+  }
+
+  .intro-container{
+    top: 5rem;
+  }
+
+  .choice__container{
+    display: block;
+    overflow: auto;
+    padding-top: 3rem;
+    box-sizing: border-box;
+  }
+
+  .choice__close{
+    top: 3rem;
+  }
+
+  .choice__left{
+    border-right: none;
+  }
+
+  select, input{
+    line-height: 1.4;
+    padding-left: 0.5rem;
+  }
+
+  .choise__book{
+    position: relative;
+    bottom: 2rem;
+  }
+
+  .line-1{
+    display: none;
+  }
+
+  .line-2{
+    display: block;
+  }
+
+  .fast-nav{
+    margin-top: 4rem;
+  }
+
+  .menu-panel__list{
+    width: 50%;
+  }
+
+  .slider__item{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .card{
+    max-width: 75%;
+  }
+
+  .qualities__list{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .footer{
+    padding: 0 1rem;
+    height: 3rem;
+  }
+
+  .footer-item::before{
+    display: none;
+  }
+}
